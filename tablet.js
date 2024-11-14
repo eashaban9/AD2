@@ -1,74 +1,113 @@
 const tabletStyle = `
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 body {
-  font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    width: 100%;
 }
 
-.home-container,
-.navigation-header,
-.navigation-max-width,
-.navigation-nav,
-.navigation-links-nav .navigation-links-root-class-name17,
-.button-secondary .button .button-md,
-.home-main,
-.home-portofolio .section-container,
-.home-max-width .max-content-container,
-.home-text-container,
-.home-text,
-.home-text01 .Heading2,
-.home-text02,
-.button .button-lg .button-secondary,
-.home-tab-selector-header,
-.home-text03 .tab-selector-btn,
-.portofolio-card-speaker-card .portofolio-card-root-class-name,
-.portofolio-card-see-project-container,
-.button-secondary-white,
-.portofolio-card-first-name,
-.portofolio-card-root-class-name5,
-.portofolio-card-root-class-name4,
-.portofolio-card-root-class-name3,
-.portofolio-card-root-class-name2,
-.portofolio-card-root-class-name1,
-.home-about .section-container,
-.home-max-width1 .max-content-container,
-.home-text-container,
-.home-text04,
-.home-text05,
-.home-text06,
-.home-checklist,
-.home-check-item,
-.fa-solid .fa-check,
-.home-text07,
-.home-check-item,
-.home-image-container,
-.home-image,
-.home-process .section-container,
-.home-max-width2,
-.home-text08,
-.home-text09,
-.home-step,
-.home-text10,
-.home-text11,
-.home-text12,
-.home-container1,
-.home-top-part,
-.home-links-container,
-.home-product-container,
-.home-text13,
-.home-text14,
-.home-navigate-container,
-.home-contact-container,
-.home-subscribe-container,
-.button-primary,
-.button-container {
-  width: 90vw;
-  padding: 20px;
+/* Общи стилове за навигацията */
+.navigation-header {
+    width: 100%;
+    padding: 2vw;
 }
 
-.portofolio-card-image-container,
-.portofolio-card-image,
-img {
-  max-width: 100vw;
-  height: auto;
+.navigation-max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation-nav {
+    display: flex;
+    gap: 1vw;
+}
+
+.navigation-links-nav span {
+    font-size: 2vw;
+    margin-left: 1vw;
+}
+
+/* Основни настройки за home и портфолио секциите */
+.home-container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.home-portofolio {
+    text-align: center;
+    margin: 2vw 0;
+    padding-top: 3vw;
+}
+
+.section-container {
+    margin-bottom: 0;
+}
+
+.home-text, .home-text01, .home-text02 {
+    display: block;
+    margin: 2vw 0;
+}
+
+.home-tab-selector-header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5vw;
+    justify-content: center;
+    margin-top: 3vw;
+}
+
+/* Стил за бутоните */
+.tab-selector-btn a {
+    text-decoration: none;
+    padding: 1vw 2vw;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.home-tab-selector-cards-container {
+        display: grid;
+        gap: 2vw;
+        grid-template-columns: repeat(2, 1fr); /* Две колони за таблети */
+    }
+    
+    .portofolio-card-image-container img {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .table-container table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 3vw;
+    }
+.table-container th, .table-container td {
+    padding: 1vw;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+/* Центриране на текста в секциите */
+.home-about, .home-process {
+    text-align: center;
+}
+
+.home-check-item {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+/* Бутоните с първичен и вторичен стил */
+.button-primary, .button-secondary {
+    padding: 1vw 2vw;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 `;
